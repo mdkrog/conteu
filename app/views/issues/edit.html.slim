@@ -1,0 +1,11 @@
+.full-width-row.medium-buffer
+  .columns.medium-8.medium-centered.small-10.small-centered
+    .columns.medium-12
+      h3 Editing issue
+      == render 'form'
+      p
+        = link_to 'Show ', @issue
+        ' |
+        = link_to 'Destroy ', @issue, data: {:confirm => 'Are you sure?'}, :method => :delete
+        ' |
+        = link_to 'Back', issues_path

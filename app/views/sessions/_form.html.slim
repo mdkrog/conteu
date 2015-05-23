@@ -1,0 +1,8 @@
+= simple_form_for(:session, url: session_path) do |f|
+  .form-inputs
+    = f.input :email, as: :email
+    = f.input :password, as: :password
+    br
+
+  .form-actions
+    = f.button :submit, class: 'success'

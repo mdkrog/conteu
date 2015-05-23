@@ -1,0 +1,15 @@
+== render 'layouts/header'
+
+.full-width-row
+  .columns.medium-8.medium-centered.small-10.small-centered
+    h1 Issue #{@issue.issue_number}: #{@issue.title}
+    br
+    == render partial: 'issues/article', collection: @articles
+    
+    .small-buffer
+      - if signed_in? 
+        = link_to 'Preview ', preview_issue_path(@issue)
+        '|
+        = link_to 'Edit ', edit_issue_path(@issue)
+        '|
+        = link_to 'View a list of all issues', issues_path

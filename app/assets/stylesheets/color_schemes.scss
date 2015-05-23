@@ -1,0 +1,21 @@
+.light{
+  color: #f1f1f1!important;
+  border-color: #f1f1f1!important;
+  .featured-issue-button{
+    &:hover{
+      background-color: rgb(230,230,230);    
+      background-color: rgba(230,230,230,0.1);  
+    }
+  }
+}
+
+.dark{
+  color: #000000!important;
+  border-color: #000!important;
+  .featured-issue-button{
+    &:hover{
+      background-color: rgb(25,25,25);    
+      background-color: rgba(25,25,25,0.1);  
+    }
+  }
+}

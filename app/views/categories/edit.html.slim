@@ -1,0 +1,11 @@
+.full-width-row.medium-buffer
+  .columns.medium-8.medium-centered.small-10.small-centered
+    .columns.medium-12
+      h3 Editing category
+      == render 'form'
+      p
+        = link_to 'Show ', @category
+        ' |
+        = link_to 'Destroy ', @category, data: {:confirm => 'Are you sure?'}, :method => :delete
+        ' |
+        = link_to 'Back', categories_path

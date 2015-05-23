@@ -1,0 +1,32 @@
+.full-width-row {
+  @include grid-row();
+  width: 100%;
+  max-width: 100%;
+
+  .full-width-columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@mixin buffer($buffer-size){
+  padding-top: $buffer-size;
+  padding-bottom: $buffer-size;
+}
+
+.x-small-buffer { @include buffer(1em); }
+.small-buffer   { @include buffer(2em); }
+.medium-buffer  { @include buffer(4em); }
+.large-buffer   { @include buffer(5em); }
+.x-large-buffer { @include buffer(7em); }
+
+body.frontpage { 
+  background-repeat: no-repeat;
+  background-position: center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #fff;
+  main { padding-bottom: 0; }
+}

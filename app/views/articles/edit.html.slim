@@ -1,0 +1,11 @@
+.full-width-row.medium-buffer
+  .columns.medium-8.medium-centered.small-10.small-centered
+    .columns.medium-12
+      h3 Editing article
+      == render 'form'
+      p
+        = link_to 'Show ', @article
+        ' |
+        = link_to 'Destroy ', @article, data: {:confirm => 'Are you sure?'}, :method => :delete
+        ' |
+        = link_to 'Back', articles_path

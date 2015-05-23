@@ -1,0 +1,13 @@
+== render 'layouts/header'
+
+.full-width-row.x-small-buffer
+  .columns.medium-8.medium-centered.small-10.small-centered
+    .columns.medium-12
+      h2 = @category.name
+
+      br
+      - if signed_in? 
+        = link_to 'Edit ', edit_category_path(@category)
+        '|
+
+      = link_to 'View a list of all categories', categories_path

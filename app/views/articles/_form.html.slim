@@ -1,0 +1,19 @@
+= simple_form_for(@article, html: {multipart: true}) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :title
+    = f.input :content, :input_html => {:class => "redactor-advanced"}, :label_html => {:class => "hide"}
+    = f.input :issue_id, collection: @issues
+    = f.input :category_id, collection: @categories
+    = f.input :priority_order, as: :integer
+    = f.input :published
+    = f.input :color_scheme, collection: Article::COLOR_SCHEMES, as: :radio_buttons
+    br
+    = f.input :poster_image, as: :file, label: "Poster image (width should be 4 times the height)"
+    = image_tag @article.poster_image.to_s, class: 'x-small-buffer' if @article.poster_image
+    br
+    br
+
+  .form-actions
+    = f.button :submit, class: 'success'

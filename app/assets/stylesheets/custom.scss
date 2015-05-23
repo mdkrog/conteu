@@ -1,0 +1,175 @@
+// set the default font family
+body,p{line-height: 2em;}
+body,h1,h2,h3,h4,h5,h6{ font-family: $body-font-family; }
+h1{ font-weight: 200; }
+h3{ 
+  font-weight: 200; 
+  margin-bottom: 1em;
+}
+
+a{
+  color: #000;
+  &:hover{
+    color: #888;
+  }
+}
+a.grayed{
+  color: $body-font-color;
+  &:hover{
+    color: #000;
+  }
+}
+
+.menu-list{
+  margin-left: 0;
+  li{
+    list-style: none;
+    line-height: 2em;
+  }
+}
+
+.no-link-color{
+  color: #000;
+  &:hover{
+    color: #000;
+  }
+}
+
+.bold{
+  font-weight: 500;
+}
+.skinny{
+  font-weight: 200;
+}
+
+.error small.error{
+  margin: 5px 0 30px;
+  padding: 2px 0;
+  background-color: #fff;
+  color: #dd4b39;
+}
+
+.border{ border: 1px solid red; }
+
+.alternate-back{ 
+  background: #f5f2f0;
+}
+
+main{
+  padding-bottom: 50px;
+  // border-top: solid 5px #dd4b39;
+}
+
+.featured-issue-button{
+  display: inline-block;
+  position: relative;
+  padding: 6px 30px;
+  border: 1px solid #333;
+  color: #333;
+  &:hover{
+    background-color: rgb(30,30,30);    
+    background-color: rgba(30,30,30,0.1);  
+  }
+}
+
+.admin_nav{
+  background: rgb(0,0,0)!important;
+  background: rgba(0,0,0,0.8)!important;  
+  .top-bar, li, a{
+    height: 32px!important;
+    line-height: 32px!important;
+    background: none!important;
+  }
+  .fa{
+    font-size: 16px;
+    color: #e1e1e1;
+    &:hover{
+      color: lighten(#e1e1e1, 20%)
+    }
+  }
+}
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  line-height: 40px;
+  background: #fff;
+}
+
+.one-edge-shadow {
+  -webkit-box-shadow: 0 -1px 10px 1px #aaa;
+     -moz-box-shadow: 0 -1px 10px 1px #aaa;
+          box-shadow: 0 -1px 10px 1px #aaa;
+}
+
+.bg-list-item{
+  background-repeat: no-repeat;
+  background-position: center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #fff;
+}
+
+div.stretchy-wrapper {
+  width: 100%;
+  padding-bottom: 25%;  
+  position: relative;
+}
+
+div.stretchy-wrapper .stretchy-wrapper-child  {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0; 
+}
+
+.stretchy-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+@mixin above_and_below($buffer-size, $border-thickness){
+  padding: $buffer-size 0;
+  border-top: $border-thickness solid #000;
+  border-bottom: $border-thickness solid #000;
+}
+
+.item-content{
+  h2{
+    display: inline-block;
+    @include above_and_below(8px,2px);
+  } 
+  h3{
+    display: inline-block;
+    @include above_and_below(8px,1px);
+  } 
+}
+
+.item-title{
+  margin: 15px 30px 0;
+  @media only screen and (max-width: 768px) { 
+    margin-top: 10px;  
+    h2{
+      font-size: 16px;
+    }
+  }
+
+}
+
+
+.unpublished-marker{
+  color: #e1e1e1;
+  &:hover{
+    color: #e1e1e1;
+  }
+  float: right;
+  font-size: 18px;
+  margin: 0 2%;
+  cursor: pointer;
+}
+
+.radio input, .checkbox input{
+  margin-right: 8px;
+}

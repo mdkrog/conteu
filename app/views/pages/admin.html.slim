@@ -1,0 +1,9 @@
+== render 'layouts/header'
+
+.full-width-row
+  .columns.medium-8.medium-centered.small-10.small-centered
+    h3 Admin
+    ul.menu-list      
+      li = link_to "Issues", issues_path
+      li = link_to "Articles", articles_path
+      li = link_to "Categories", categories_path

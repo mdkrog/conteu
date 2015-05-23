@@ -1,0 +1,18 @@
+√. Admin nav bar
+  √ Settings
+  √ Logout
+√. Footer
+√. Admin screen
+√. Issues index page (with poster image)
+√. Home page/ Issue settings
+  a. Black or white option
+  b. Cover image
+  c. Preview
+√. Restrict access to non-published issues
+√. Proportion indicator (1450 x 380)
+√. Issue show - display list of articles
+-. Article order priority
+-. Clean up links and menu
+  a. Text that is displayed
+  b. Where they link to
+  c. Color/Spacing or way it is displayed

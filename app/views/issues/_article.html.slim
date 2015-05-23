@@ -1,0 +1,13 @@
+- if article.published? || signed_in?
+  = link_to article_path(article)
+    .bg-list-item.stretchy-wrapper style=("background-image: url(#{article.poster_image.to_s});")
+      .stretchy-wrapper-child
+        - unless article.published?
+          .unpublished-marker.has-tip aria-haspopup="true" data-tooltip="" data-options="show_on:medium; show_on:large; disable_for_touch:true" title="Not published" 
+            = fa_icon "eye-slash"
+        / .stretchy-container
+        .item-title
+          h2 class="#{article.color_scheme}" 
+            em.skinny = article.category.name 
+            span.skinny = " | " 
+            = article.title

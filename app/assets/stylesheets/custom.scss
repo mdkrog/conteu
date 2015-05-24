@@ -72,17 +72,16 @@ main{
   }
 }
 
-.admin_nav{
+.admin-nav{
+  position: absolute;
+  top: 0px;
+  line-height: 40px;
   background: rgb(0,0,0)!important;
   background: rgba(0,0,0,0.8)!important;  
-  .top-bar, li, a{
-    height: 32px!important;
-    line-height: 32px!important;
-    background: none!important;
-  }
   .fa{
     font-size: 16px;
     color: #e1e1e1;
+    margin-left: 1em;
     &:hover{
       color: lighten(#e1e1e1, 20%)
     }
@@ -155,9 +154,7 @@ div.stretchy-wrapper .stretchy-wrapper-child  {
       font-size: 16px;
     }
   }
-
 }
-
 
 .unpublished-marker{
   color: #e1e1e1;

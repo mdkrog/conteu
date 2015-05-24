@@ -12,14 +12,14 @@
 √. Proportion indicator (1450 x 380)
 √. Issue show - display list of articles
 √. Article order priority
--. Required fields
--. Mobile scrolling issues (and nav bar)
--. Clean up links and menu
+√. Clean up links and menu
   a. Text that is displayed
   b. Where they link to
   c. Color/Spacing or way it is displayed
+√. Mobile scrolling issues (and nav bar)
+-. New logo
+-. Required fields
 -. User reset password
 -. User access rights
   a. Admin
   b. Author
--. New logo

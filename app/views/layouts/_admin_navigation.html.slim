@@ -1,10 +1,8 @@
-.contain-to-grid.sticky.admin_nav
-  nav.top-bar data-options=("sticky_on: small") data-topbar="" role="navigation"
-    section.top-bar-section
-      ul.right
-        li
-          = link_to admin_path do
-            = fa_icon "cog"
-        li
-          = link_to sign_out_path, method: :delete do
-            = fa_icon "sign-out"
+.admin-nav.full-width-row 
+  .columns.medium-10.medium-centered.small-10.small-centered
+    .right
+      = link_to admin_path do
+        = fa_icon "cog"
+      = link_to sign_out_path, method: :delete do
+        = fa_icon "sign-out"
+.x-small-buffer

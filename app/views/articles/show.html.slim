@@ -10,7 +10,5 @@
       - if signed_in? 
         = link_to 'Edit ', edit_article_path(@article)
         '|
-        = link_to 'View a list of all posts ', articles_path
-        '|
       = link_to 'Back to issue', issue_path(@article.issue)
 

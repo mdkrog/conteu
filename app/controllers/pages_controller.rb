@@ -4,6 +4,8 @@ class PagesController < ApplicationController
     @issue = Issue.latest_issue
     render layout: 'frontpage'
   end
-  def admin    
+  def admin
+    @issues = Issue.all.includes(:articles).order(issue_number: :asc)
+    @categories = Category.all.order(name: :asc)
   end
 end

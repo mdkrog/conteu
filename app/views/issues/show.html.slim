@@ -8,8 +8,8 @@
     
     .small-buffer
       - if signed_in? 
-        = link_to 'Preview ', preview_issue_path(@issue)
-        '|
         = link_to 'Edit ', edit_issue_path(@issue)
         '|
-        = link_to 'View a list of all issues', issues_path
+        = link_to 'Back to admin ', admin_path
+        '|
+      = link_to 'All issues', issues_path

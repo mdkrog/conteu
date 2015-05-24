@@ -7,8 +7,8 @@ Rails.application.routes.draw do
       get 'preview'
     end
   end
-  resources :articles
-  resources :categories
+  resources :articles, except: [:index]
+  resources :categories, except: [:index, :show]
 
   resources :passwords, controller: 'clearance/passwords', only: [:create, :new]
   resource :session, controller: 'clearance/sessions', only: [:create]

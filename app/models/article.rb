@@ -9,6 +9,5 @@ class Article < ActiveRecord::Base
   COLOR_SCHEMES = [ :dark, :light ]
   enum color_scheme: COLOR_SCHEMES
   
-  scope :published, -> { where(published: true).order(created_at: :desc) }
-
+  scope :published, -> { where(published: true) }
 end

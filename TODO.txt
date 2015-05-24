@@ -11,8 +11,15 @@
 √. Restrict access to non-published issues
 √. Proportion indicator (1450 x 380)
 √. Issue show - display list of articles
--. Article order priority
+√. Article order priority
+-. Required fields
+-. Mobile scrolling issues (and nav bar)
 -. Clean up links and menu
   a. Text that is displayed
   b. Where they link to
   c. Color/Spacing or way it is displayed
+-. User reset password
+-. User access rights
+  a. Admin
+  b. Author
+-. New logo

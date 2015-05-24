@@ -3,7 +3,55 @@
 .full-width-row
   .columns.medium-8.medium-centered.small-10.small-centered
     h3 Admin
-    ul.menu-list      
-      li = link_to "Issues", issues_path
-      li = link_to "Articles", articles_path
-      li = link_to "Categories", categories_path
+    table
+      tbody
+        - @issues.each do |issue|
+          tr
+            th Issue #{issue.issue_number}.
+            th = link_to issue.title, issue_path(issue)
+            th = link_to edit_issue_path(issue) do
+                = fa_icon "pencil-square-o"
+            th 
+              - if issue.published?
+                = fa_icon "eye" 
+              - else
+                = fa_icon "eye-slash"
+            th = link_to issue, data: {:confirm => 'Delete ISSUE - Are you sure?'}, :method => :delete do
+                = fa_icon "trash-o"
+          - issue.articles.order(priority_order: :asc).each do |article|
+            tr
+              td = article.priority_order
+              td = link_to article.title, article_path(article)
+              td = link_to edit_article_path(article) do
+                = fa_icon "pencil-square-o"
+              td 
+                - if article.published?
+                  = fa_icon "eye" 
+                - else
+                  = fa_icon "eye-slash"
+              td = link_to article, data: {:confirm => 'Delete ARTICLE - Are you sure?'}, :method => :delete do
+                = fa_icon "trash-o"
+
+    .admin-options
+      = link_to 'New Article ', new_article_path
+      ' | 
+      = link_to 'New Issue', new_issue_path
+    
+    br
+    
+    table
+      thead
+        tr
+          th colspan="4" Categories
+      tbody
+        - @categories.each do |category|
+          tr
+            td width="200" = category.name
+            td = link_to edit_category_path(category) do
+              = fa_icon "pencil-square-o"
+            td = link_to category, data: {:confirm => 'Are you sure?'}, :method => :delete do
+              = fa_icon "trash-o"
+            td
+    .admin-options
+      = link_to 'New Category ', new_category_path
+    br

@@ -2,13 +2,9 @@ class ArticlesController < ApplicationController
   before_action :require_login, except: [:show]
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
-  def index
-    @articles = Article.all.order(priority_order: :asc)
-  end
-
   def show
     if !@article.published? && !signed_in?
-      redirect_to articles_url
+      redirect_to root_path
     end
   end
 
@@ -43,7 +39,7 @@ class ArticlesController < ApplicationController
   def destroy
     @article.destroy
     respond_to do |format|
-      format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
+      format.html { redirect_to admin_path, notice: 'Article was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

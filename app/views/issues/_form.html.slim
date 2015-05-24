@@ -13,6 +13,7 @@
     br
     = f.input :cover_image, as: :file
     = image_tag @issue.cover_image.to_s, class: 'x-small-buffer' if @issue.cover_image
+    em = link_to '(Preview as homepage)', preview_issue_path(@issue), target: "_blank" if @issue.id
     br
     br
 

@@ -2,8 +2,5 @@
 
 .full-width-row
   .columns.medium-8.medium-centered.small-10.small-centered
-    == render partial: 'issues/issue', collection: @issues
-    
+    == render partial: 'issues/issue', collection: @issues    
     .small-buffer
-      - if signed_in? 
-        = link_to 'Create New Issue', new_issue_path

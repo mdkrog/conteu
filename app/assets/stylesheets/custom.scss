@@ -173,3 +173,14 @@ div.stretchy-wrapper .stretchy-wrapper-child  {
 .radio input, .checkbox input{
   margin-right: 8px;
 }
+
+
+.admin-options{
+  font-size: 14px;
+  a{
+    color: #000;
+    &:hover{
+      color: #888;
+    }
+  }
+}

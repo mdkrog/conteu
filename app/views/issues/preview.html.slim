@@ -1,5 +1,6 @@
 .homepage-buffer.text-center
-    = image_tag("logo_#{@issue.color_scheme}.png", alt: "Conteu Logo", class: "conteu-logo")
+    .medium-buffer
+      = image_tag("logo_#{@issue.color_scheme}.png", alt: "Conteu Logo", class: "conteu-logo")
     br
     = link_to issue_path(@issue)
       .featured-issue-button class="#{@issue.color_scheme}"

@@ -23,7 +23,7 @@
 .homepage-buffer{
   @include buffer(5em);
   @media only screen and (max-width: 40em) { 
-    @include buffer(1em);
+    @include buffer(3em);
   }
 }
  

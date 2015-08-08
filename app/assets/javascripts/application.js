@@ -15,6 +15,7 @@
 //= require foundation
 //= require redactor-rails
 //= require redactor-rails/plugins
+//= require redactor-rails-advanced/plugins/table
 //= require redactor-rails-advanced/config
 //= require_tree .
 $(function() {

@@ -13,6 +13,7 @@ window.init_redactor = function(){
                 'fontcolor',
                 'fontfamily',
                 'fullscreen',
+                'table',
                 'clips'],
         "imageUpload":"/redactor_rails/pictures?" + params,
         "imageGetJson":"/redactor_rails/pictures",

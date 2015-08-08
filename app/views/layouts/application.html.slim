@@ -6,8 +6,6 @@ html
       = content_for?(:title) ? yield(:title) : 'Conteu'
     meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Conteu'}"
     == stylesheet_link_tag "application", media: 'all', 'data-turbolinks-track' => true
-    == stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Rufina:400,700', media: 'all', type: 'text/css'
-
     / Modernizr is required for Zurb Foundation
     == javascript_include_tag 'vendor/modernizr'
     == javascript_include_tag 'application', 'data-turbolinks-track' => true

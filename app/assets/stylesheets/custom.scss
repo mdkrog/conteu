@@ -16,6 +16,7 @@ h3{
 }
 
 .front-page-conteu-logo{
+  width: 700px;
   margin-bottom: 2em;
   padding-left: 2em;
   padding-right: 2em;
@@ -72,6 +73,16 @@ a.grayed{
 main{
   padding-bottom: 50px;
   // border-top: solid 5px #dd4b39;
+}
+
+table{
+  table-layout: fixed;
+  border: 0;
+}
+
+.article-col{
+  vertical-align: top;
+  width: 50%;
 }
 
 .featured-issue-button{
@@ -184,7 +195,6 @@ div.stretchy-wrapper .stretchy-wrapper-child  {
 .radio input, .checkbox input{
   margin-right: 8px;
 }
-
 
 .admin-options{
   font-size: 14px;

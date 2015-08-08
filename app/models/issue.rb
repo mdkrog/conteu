@@ -4,7 +4,7 @@ class Issue < ActiveRecord::Base
   validates_presence_of :title
 
   mount_uploader :poster_image, ImageUploader
-  mount_uploader :cover_image, ImageUploader
+  mount_uploader :cover_image, CoverUploader
 
   COLOR_SCHEMES = [ :dark, :light ]
   enum color_scheme: COLOR_SCHEMES

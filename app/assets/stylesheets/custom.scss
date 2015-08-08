@@ -1,18 +1,52 @@
 // set the default font family
 body,p{line-height: 2em;}
-body{font-family: $body-font-family;}
-h1,h2,h3,h4,h5,h6{ font-family: $heading-font-family; }
+body{
+  font-family: $body-font-family;
+  background: #fff;
+}
+h1,h2,h3,h4,h5,h6{ font-family: $body-font-family-sans; }
 h1{ font-weight: 200; font-size: $h1-font-size; }
-h2{ font-size: $h2-font-size }
+h2{ 
+  font-size: $h2-font-size; 
+  font-family: $body-font-family-sans; 
+  font-weight: 200;
+  line-height: 1.2em; }
 h3{ 
   font-weight: 200; 
   margin-bottom: 1em;
 }
 
+p{
+  color: #000;
+  line-height: 1.5em;
+}
+
+.logo-container{
+  text-align: right;
+  @media only screen and (max-width: 768px) { 
+    text-align: center;
+  }
+}
+
+.header-bg{
+  background: #fff;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.background-white{
+  background: #fff;
+}
+
 .conteu-logo{
-  width: 300px;
-  max-width: 100%;
   margin-bottom: 2em;
+}
+
+.issue-title-link{
+
+}
+
+.editorial{
+  // background: #e1e1e1;
 }
 
 .front-page-conteu-logo{
@@ -65,9 +99,11 @@ a.grayed{
 }
 
 .border{ border: 1px solid red; }
+.border-blue{ border: 1px solid blue; }
+.border-green{ border: 1px solid green; }
 
 .alternate-back{ 
-  background: #f5f2f0;
+  background: #c5c2c0;
 }
 
 main{

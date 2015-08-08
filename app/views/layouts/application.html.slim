@@ -12,7 +12,11 @@ html
     == csrf_meta_tags
   body
     - if signed_in?
-      == render 'layouts/admin_navigation'
+      / == render 'layouts/admin_navigation'
     main[role="main"]
-      == yield
-      == render 'layouts/footer'
+      == render 'layouts/header'
+      .full-width-row.border-green
+        .columns.medium-8.medium-centered.small-10.small-centered.full-width-columns.border-green
+          .small-buffer
+          == yield
+      / == render 'layouts/footer'

@@ -4,6 +4,7 @@ class IssuesController < ApplicationController
 
   def index
     @issues = Issue.all.order(issue_number: :desc)
+    @featured_issue = @issues.last
   end
 
   def show

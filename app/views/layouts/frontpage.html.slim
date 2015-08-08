@@ -10,7 +10,7 @@ html
     == javascript_include_tag 'vendor/modernizr'
     == javascript_include_tag 'application', 'data-turbolinks-track' => true
     == csrf_meta_tags
-  body.frontpage style=("background-image: url(#{@issue.cover_image.to_s});")
+  body.frontpage style=("background-image: url(#{@issue.poster_image.to_s});")
     - if signed_in?
       == render 'layouts/admin_navigation'
     main[role="main"]

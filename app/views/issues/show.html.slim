@@ -1,15 +1,11 @@
-== render 'layouts/header'
+h1 Issue #{@issue.issue_number}: #{@issue.title}
+br
+== render partial: 'issues/article', collection: @articles
 
-.full-width-row
-  .columns.medium-8.medium-centered.small-10.small-centered
-    h1 Issue #{@issue.issue_number}: #{@issue.title}
-    br
-    == render partial: 'issues/article', collection: @articles
-    
-    .small-buffer
-      - if signed_in? 
-        = link_to 'Edit ', edit_issue_path(@issue)
-        '|
-        = link_to 'Back to admin ', admin_path
-        '|
-      = link_to 'All issues', issues_path
+.small-buffer
+  - if signed_in? 
+    = link_to 'Edit ', edit_issue_path(@issue)
+    '|
+    = link_to 'Back to admin ', admin_path
+    '|
+  = link_to 'All issues', issues_path

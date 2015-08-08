@@ -1,5 +1,3 @@
-== render 'layouts/header'
-
 .full-width-row
   .columns.medium-8.medium-centered.small-10.small-centered
     h3 Admin
@@ -40,10 +38,9 @@
     br
     
     table
-      thead
+      tbody
         tr
           th colspan="4" Categories
-      tbody
         - @categories.each do |category|
           tr
             td width="200" = category.name

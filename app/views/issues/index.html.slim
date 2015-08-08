@@ -1,6 +1,15 @@
-== render 'layouts/header'
+.featured-issue.row.border
+  .columns.medium-6.small-12.featured-cover.border-blue
+    = image_tag("#{@featured_issue.cover_image.to_s}")
+  .columns.medium-6.small-12.editorial.border-blue
+    .text-right
+      em = @featured_issue.release_date.strftime("%d %B %Y")
+    br
+    h2 = "ISSUE #{@featured_issue.issue_number}."
+    h2 = @featured_issue.title.upcase
+    br
+    p.text-justify Tootsie roll cheesecake biscuit chocolate bar. Apple pie toffee brownie caramels croissant. Tootsie roll toffee fruitcake marshmallow apple pie toffee chocolate jelly beans. Lollipop biscuit tootsie roll cake jujubes chupa chups sweet cookie. Wafer cake topping lollipop apple pie oat cake sesame snaps. Tootsie roll chupa.
 
-.full-width-row
-  .columns.medium-8.medium-centered.small-10.small-centered
-    == render partial: 'issues/issue', collection: @issues    
-    .small-buffer
+.small-buffer
+.row
+  == render partial: 'issues/issue', collection: @issues

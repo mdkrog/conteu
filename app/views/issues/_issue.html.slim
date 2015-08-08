@@ -1,10 +1,7 @@
 - if issue.published? || signed_in?
-  = link_to issue_path(issue)
-    .bg-list-item.stretchy-wrapper style=("background-image: url(#{issue.poster_image.to_s});")
-      .stretchy-wrapper-child
-        - unless issue.published?
-          .unpublished-marker.has-tip aria-haspopup="true" data-tooltip="" data-options="show_on:medium; show_on:large; disable_for_touch:true" title="Not yet released" 
-            = fa_icon "eye-slash"
-        .stretchy-container
-          .item-content.text-center
-            h2 class="#{issue.color_scheme}" = issue.title
+  .columns.medium-3.small-6.text-center
+    = link_to issue_path(issue)
+      = image_tag("#{issue.cover_image.thumb.to_s}")
+    
+    = link_to issue_path(issue)
+      span.issue-title-link = issue.title

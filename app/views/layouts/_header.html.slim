@@ -1,5 +1,6 @@
-header.full-width-row
-  .columns.medium-8.medium-centered.small-10.small-centered
+header.full-width-row.header-bg.border-blue
+  .columns.medium-8.medium-centered.small-10.small-centered.border
     .small-buffer
-    = link_to root_path do
-      = image_tag("logo_dark.png", alt: "Conteu Logo", class: "conteu-logo right")
+    .logo-container
+      = link_to root_path do
+        = image_tag("logo_dark_small.png", alt: "Conteu Logo", class: "conteu-logo")

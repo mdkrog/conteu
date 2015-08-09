@@ -2,7 +2,7 @@
 body,p{line-height: 2em;}
 body{
   font-family: $body-font-family;
-  background: #fff;
+  background: #f1f1f1;
 }
 h1,h2,h3,h4,h5,h6{ font-family: $body-font-family-sans; }
 h1{ font-weight: 200; font-size: $h1-font-size; }
@@ -17,7 +17,7 @@ h3{
 }
 
 p{
-  color: #000;
+  color: #444;
   line-height: 1.5em;
 }
 
@@ -30,7 +30,6 @@ p{
 
 .header-bg{
   background: #fff;
-  border-bottom: 1px solid #f1f1f1;
 }
 
 .background-white{
@@ -47,7 +46,53 @@ p{
 
 .editorial{
   // background: #e1e1e1;
+  h2{
+    color: #555;
+    font-size: 18px; 
+    font-family: 'Times'; 
+    font-weight: 100;
+    line-height: 1em;
+  }
+  p{
+    font-size: 14px;
+    line-height: 1.6em;
+  }
+  .date-text{
+    font-size: 12px;
+    color: #a1a1a1;
+  }
 }
+
+.no-spacing{
+  margin: 0;
+  padding: 0;
+}
+
+
+.page-gradient {
+  /* fallback DIY*/
+  background-color: #fff;
+  // background-image: url(images/linear_bg_1.png);
+  background-repeat: repeat-y;
+  height: 100%;
+
+  /* Safari 4-5, Chrome 1-9 */
+  // background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(0.05, #999), color-stop(0.05, #000), color-stop(0.95, #fff), to(#fff));
+  background: -webkit-linear-gradient(left, #999, #999, #fff, #ccc, #ccc, #fff, #fff, #fff);
+
+  /* Safari 5.1+, Chrome 10+ */
+  // background: -webkit-linear-gradient(left, #2F2727, #1a82f7 5%, #2F2727, #1a82f7 95%, #2F2727);
+
+  // /* Firefox 3.6+ */
+  // background: -moz-linear-gradient(left, #2F2727, #1a82f7 5%, #2F2727, #1a82f7 95%, #2F2727);
+
+  // /* IE 10 */
+  // background: -ms-linear-gradient(left, #2F2727, #1a82f7 5%, #2F2727, #1a82f7 95%, #2F2727);
+
+  // /* Opera 11.10+ */
+  // background: -o-linear-gradient(left, #2F2727, #1a82f7 5%, #2F2727, #1a82f7 95%, #2F2727);
+}
+
 
 .front-page-conteu-logo{
   width: 700px;

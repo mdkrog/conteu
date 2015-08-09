@@ -1,14 +1,9 @@
-== render 'layouts/header'
+h2 = @article.title
+p == @article.content
 
-.full-width-row
-  .columns.medium-8.medium-centered.small-10.small-centered
-    .columns.medium-12
-      h2 = @article.title
-      p == @article.content
-
-      br
-      - if signed_in? 
-        = link_to 'Edit ', edit_article_path(@article)
-        '|
-      = link_to 'Back to issue', issue_path(@article.issue)
+br
+- if signed_in? 
+  = link_to 'Edit ', edit_article_path(@article)
+  '|
+= link_to 'Back to issue', issue_path(@article.issue)
 

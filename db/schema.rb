@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150523185908) do
+ActiveRecord::Schema.define(version: 20150809111728) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20150523185908) do
     t.datetime "updated_at"
     t.string   "cover_image"
     t.integer  "color_scheme", default: 0
+    t.string   "cover_spread"
   end
 
   create_table "redactor_assets", force: true do |t|

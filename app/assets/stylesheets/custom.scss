@@ -2,7 +2,7 @@
 body,p{line-height: 2em;}
 body{
   font-family: $body-font-family;
-  background: #f1f1f1;
+  background: #f9f9f9;
 }
 h1,h2,h3,h4,h5,h6{ font-family: $body-font-family-sans; }
 h1{ font-weight: 200; font-size: $h1-font-size; }
@@ -32,35 +32,11 @@ p{
   background: #fff;
 }
 
-.background-white{
-  background: #fff;
-}
-
 .conteu-logo{
   margin-bottom: 2em;
 }
 
 .issue-title-link{
-
-}
-
-.editorial{
-  // background: #e1e1e1;
-  h2{
-    color: #555;
-    font-size: 18px; 
-    font-family: 'Times'; 
-    font-weight: 100;
-    line-height: 1em;
-  }
-  p{
-    font-size: 14px;
-    line-height: 1.6em;
-  }
-  .date-text{
-    font-size: 12px;
-    color: #a1a1a1;
-  }
 }
 
 .no-spacing{
@@ -68,31 +44,9 @@ p{
   padding: 0;
 }
 
-
-.page-gradient {
-  /* fallback DIY*/
-  background-color: #fff;
-  // background-image: url(images/linear_bg_1.png);
-  background-repeat: repeat-y;
-  height: 100%;
-
-  /* Safari 4-5, Chrome 1-9 */
-  // background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(0.05, #999), color-stop(0.05, #000), color-stop(0.95, #fff), to(#fff));
-  background: -webkit-linear-gradient(left, #999, #999, #fff, #ccc, #ccc, #fff, #fff, #fff);
-
-  /* Safari 5.1+, Chrome 10+ */
-  // background: -webkit-linear-gradient(left, #2F2727, #1a82f7 5%, #2F2727, #1a82f7 95%, #2F2727);
-
-  // /* Firefox 3.6+ */
-  // background: -moz-linear-gradient(left, #2F2727, #1a82f7 5%, #2F2727, #1a82f7 95%, #2F2727);
-
-  // /* IE 10 */
-  // background: -ms-linear-gradient(left, #2F2727, #1a82f7 5%, #2F2727, #1a82f7 95%, #2F2727);
-
-  // /* Opera 11.10+ */
-  // background: -o-linear-gradient(left, #2F2727, #1a82f7 5%, #2F2727, #1a82f7 95%, #2F2727);
+.cover-thumbnail{
+  cursor: pointer; 
 }
-
 
 .front-page-conteu-logo{
   width: 700px;
@@ -158,12 +112,36 @@ main{
 
 table{
   table-layout: fixed;
-  border: 0;
+  border: 0px;
+  background: none;
+  td.article-col {
+    border-top: 0;
+    padding-left: 0;
+    // padding-right: 20px;
+  }
+  tr{
+    &:hover{
+      background: none!important;
+    }
+  }
 }
 
 .article-col{
   vertical-align: top;
   width: 50%;
+}
+
+h2.article-heading{
+  font-weight: 300;
+  font-family: $body-font-family-sans;;
+  letter-spacing: 4px;
+}
+
+.sub-heading{
+  margin-top: 10px;
+  font-family: $body-font-family-sans;
+  font-weight: 100;
+  font-size: 10px;
 }
 
 .featured-issue-button{

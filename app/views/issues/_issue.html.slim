@@ -1,7 +1,5 @@
 - if issue.published? || signed_in?
   .columns.medium-3.small-6.text-center
-    = link_to issue_path(issue)
-      = image_tag("#{issue.cover_image.thumb.to_s}")
-    
+    = image_tag("#{issue.cover_image.thumb.to_s}", class: "cover-thumbnail", data: {image_src: "#{issue.cover_spread.to_s}", issue_number: issue.issue_number},  alt: "#{issue.title} Cover Thumbnail")
     = link_to issue_path(issue)
       span.issue-title-link = issue.title

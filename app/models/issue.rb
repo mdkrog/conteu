@@ -5,6 +5,7 @@ class Issue < ActiveRecord::Base
 
   mount_uploader :poster_image, ImageUploader
   mount_uploader :cover_image, CoverUploader
+  mount_uploader :cover_spread, ImageUploader
 
   COLOR_SCHEMES = [ :dark, :light ]
   enum color_scheme: COLOR_SCHEMES

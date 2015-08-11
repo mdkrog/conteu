@@ -7,8 +7,12 @@
     = f.input :release_date
     = f.input :color_scheme, collection: Issue::COLOR_SCHEMES, as: :radio_buttons
     br
-    = f.input :cover_image, as: :file, label: "Cover Image (Width: 500px, Height: 750px)"
+    = f.input :cover_image, as: :file, label: "Cover Image (Width: 300px, Height: 450px)"
     = image_tag @issue.cover_image.to_s, class: 'x-small-buffer' if @issue.cover_image
+    br
+    br
+    = f.input :cover_spread, as: :file, label: "Cover Spread (Width: 1000px, Height: 750px)"
+    = image_tag @issue.cover_spread.to_s, class: 'x-small-buffer' if @issue.cover_spread
     br
     br
     = f.input :poster_image, as: :file, label: "Poster image (Displays as homepage background)"

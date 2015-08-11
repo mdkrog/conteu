@@ -1,24 +1,13 @@
 .featured-issue.row.page-gradient
-  .columns.medium-12.small-12.no-spacing
-    = image_tag("cover-sample.png")
-br
-br
-br
-.featured-issue.row.page-gradient
-  .columns.medium-6.small-12.featured-cover.no-spacing
-    = image_tag("#{@featured_issue.cover_image.to_s}")
-  .columns.medium-6.small-12.editorial.no-spacing
-    .columns.medium-10.medium-centered
-      .text-right
-        br
-        em.date-text = @featured_issue.release_date.strftime("%d %B %Y")
-      br
-      br
-      h2 = "ISSUE #{@featured_issue.issue_number}."
-      h2 = @featured_issue.title.upcase
-      br
-      p.text-justify Tootsie roll cheesecake biscuit chocolate bar. Apple pie toffee brownie caramels croissant. Tootsie roll toffee fruitcake marshmallow apple pie toffee chocolate jelly beans. Lollipop biscuit tootsie roll cake jujubes chupa chups sweet cookie. Wafer cake topping lollipop apple pie oat cake sesame snaps. Tootsie roll chupa. Tootsie roll cheesecake biscuit chocolate bar. Apple pie toffee brownie caramels croissant. Tootsie roll toffee fruitcake marshmallow apple pie toffee chocolate jelly beans. Lollipop biscuit tootsie roll cake jujubes chupa chups sweet cookie. Wafer cake topping lollipop apple pie oat cake sesame snaps. Tootsie roll chupa.
-
+  .columns.medium-12.small-12
+    = image_tag(@featured_issue.cover_spread.to_s, class: "cover-spread", alt: "Featured Cover Spread")
+    .small-buffer
+    .text-center
+      = link_to issue_path(@featured_issue), class: 'featured-issue-button-link'
+          .featured-issue-button class="dark"
+            em.btn-text Read Issue
+    br
+    hr
 .small-buffer
 .row
   == render partial: 'issues/issue', collection: @issues

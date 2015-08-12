@@ -10,7 +10,7 @@
     = f.input :published
     = f.input :color_scheme, collection: Article::COLOR_SCHEMES, as: :radio_buttons
     br
-    = f.input :poster_image, as: :file, label: "Poster image (width should be 4 times the height)"
+    = f.input :poster_image, as: :file, label: "Poster image (width 1000px, height 200px)"
     = image_tag @article.poster_image.to_s, class: 'x-small-buffer' if @article.poster_image
     br
     br

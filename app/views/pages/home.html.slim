@@ -2,8 +2,14 @@
     .medium-buffer
       = image_tag("logo_#{@issue.color_scheme}.png", alt: "Conteu Logo", class: "front-page-conteu-logo")
     .small-buffer
-    = link_to issue_path(@issue)
-      .featured-issue-button class="#{@issue.color_scheme}"
-        span.btn-title = @issue.title.upcase
-        em.btn-text   issue 
-        em.btn-number = @issue.issue_number
+    .featured-issue-button class="#{@issue.color_scheme}"
+      span.btn-title = @issue.title.upcase
+      em.btn-text issue 
+      em.btn-number = 1
+      .btn-coming-soon COMING SOON
+
+    / = link_to issue_path(@issue)
+    /   .featured-issue-button class="#{@issue.color_scheme}"
+    /     span.btn-title = @issue.title.upcase
+    /     em.btn-text issue 
+    /     em.btn-number = @issue.issue_number

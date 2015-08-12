@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150809111728) do
+ActiveRecord::Schema.define(version: 20150812204617) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20150809111728) do
     t.integer  "category_id"
     t.integer  "color_scheme",   default: 0
     t.integer  "priority_order", default: 0
+    t.string   "blurb"
   end
 
   add_index "articles", ["category_id"], name: "index_articles_on_category_id", using: :btree

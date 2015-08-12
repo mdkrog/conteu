@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
   def show
+    @issue = @article.issue
     if !@article.published? && !signed_in?
       redirect_to root_path
     end
@@ -47,11 +48,11 @@ class ArticlesController < ApplicationController
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_article
-    @article = Article.find(params[:id])
+    @article = Article.includes(:issue).find(params[:id])
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def article_params
-    params.require(:article).permit(:title, :content, :published, :poster_image, :author, :category_id, :issue_id, :color_scheme, :priority_order)
+    params.require(:article).permit(:title, :content, :published, :poster_image, :author, :blurb, :category_id, :issue_id, :color_scheme, :priority_order)
   end
 end

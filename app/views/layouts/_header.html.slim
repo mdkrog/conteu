@@ -1,6 +1,11 @@
 header.full-width-row.header-bg
-  .columns.medium-8.medium-centered.small-10.small-centered
+  .columns.medium-6.end.small-12.medium-push-4
     .small-buffer
     .logo-container
       = link_to root_path do
         = image_tag("logo_dark_small.png", alt: "Conteu Logo", class: "conteu-logo")
+  .columns.medium-2.medium-offset-2.small-12.medium-pull-8
+    - if @issue
+      .small-buffer.visible-for-medium-up
+      h1.issue-title.no-spacing ISSUE 1: FIRST ONE
+      .x-small-buffer.visible-for-small-only

@@ -3,6 +3,9 @@
 
   .form-inputs
     = f.input :title
+    = f.input :author
+    = f.input :blurb, as: :text
+    br
     = f.input :content, :input_html => {:class => "redactor-advanced"}, :label_html => {:class => "hide"}
     = f.input :issue_id, collection: @issues
     = f.input :category_id, collection: @categories

@@ -24,5 +24,38 @@
   a. Admin
   b. Author
 
--. Corrections
+x. Corrections
+
+Cost:
+Heroku: $7 pm
+Domain: conteumagazine.co.za R99 pa
+
+Mattkrog:
+Heroku: $7
+Domain: mattkrog.me / mattkrog.com (R170 / R100)
+
 -. Analytics
+-. Newsletter
+-. Server puma / Procfile
+-. Caching
+-. Monitoring
+-. Register conteu.com / conteu.co.za
+-. Meta Data / SEO
+  -. Site map / webmaster tools
+
+- Previous and next article
+- Footer
+- Sharpen logo
+
+- Mobile
+  - Make header small-10
+  - article banner text smaller
+  - article scrolling
+  - home padding
+
+- Issue index when clicking an issue it gets highlighted
+
+-. Templates
+  - Standard header
+  - Two panel template
+  - Image above heading?

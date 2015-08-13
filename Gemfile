@@ -19,6 +19,7 @@ gem 'mini_magick'
 gem 'font-awesome-rails'
 gem 'figaro'
 gem 'fog'
+gem 'google-analytics-rails'
 
 group :development do
   gem 'better_errors'

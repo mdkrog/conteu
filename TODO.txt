@@ -1,3 +1,39 @@
+Features
+--------
+/ Newsletter
+- Server puma / Procfile
+- Caching
+- Meta Data / SEO
+  - Site map / webmaster tools
+- 404 page
+
+Admin
+------
+- Register conteu.com / conteu.co.za
+- Email address
+
+Mobile 
+------
+- scrolling bug
+- footer links
+- home padding
+
+Extras
+------
+- Issue index when clicking an issue it gets highlighted
+- Sharpen logo
+
+
+
+
+--------------------------------------
+Cost:
+Heroku: $7 pm
+Domain: conteumagazine.co.za R99 pa
+--------------------------------------
+
+// completed
+√ Analytics
 √. Admin nav bar
   √ Settings
   √ Logout
@@ -24,42 +60,11 @@
   a. Admin
   b. Author
 
-x. Corrections
-
-Cost:
-Heroku: $7 pm
-Domain: conteumagazine.co.za R99 pa
-
-Mattkrog:
-Heroku: $7
-Domain: mattkrog.me / mattkrog.com (R170 / R100)
-
-√. Analytics
--. Newsletter
--. Email address
--. Server puma / Procfile
--. Caching
--. Monitoring
--. Register conteu.com / conteu.co.za
--. Meta Data / SEO
-  -. Site map / webmaster tools
--. 404 page
-
-√ Previous and next article
-- Footer
-- Sharpen logo
-√ Change font
-
 - Mobile
-  - Make header small-10
-  - article banner text smaller
-  - article scrolling
-  - home padding
-
-- Issue index when clicking an issue it gets highlighted
-
-
--. Templates
-  - Standard header
-  - Two panel template
-  - Image above heading?
+  √ Make header small-10
+  √ article banner text smaller
+  ? article scrolling
+√ Previous and next article
+√ Footer
+√ Change font
+x. Corrections

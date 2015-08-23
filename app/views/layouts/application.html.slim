@@ -12,7 +12,7 @@ html
     == csrf_meta_tags
   body
     - if signed_in?
-      / == render 'layouts/admin_navigation'
+      == render 'layouts/admin_navigation'
     main[role="main"]
       == render 'layouts/header'
       .full-width-row

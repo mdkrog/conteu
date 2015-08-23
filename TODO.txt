@@ -48,7 +48,7 @@ Domain: mattkrog.me / mattkrog.com (R170 / R100)
 √ Previous and next article
 - Footer
 - Sharpen logo
-- Change font
+√ Change font
 
 - Mobile
   - Make header small-10

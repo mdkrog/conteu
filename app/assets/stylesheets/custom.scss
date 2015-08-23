@@ -18,7 +18,7 @@ h3{
 p, td, ol, ul{
   font-family: $body-font-family;
   font-size: 14px!important;
-  color: #000;
+  color: #000!important;
   line-height: 1.3em!important;
   li{
     margin-bottom: 10px;
@@ -29,6 +29,9 @@ p, td, ol, ul{
   text-align: right;
   @media only screen and (max-width: 768px) { 
     text-align: center;
+    img{
+      width: 75%;
+    }
   }
 }
 
@@ -222,7 +225,7 @@ footer{
     padding-left: 0!important;
   }
   .instagram-icon{
-    font-size: 24px;
+    font-size: 22px;
     padding: 0;
     margin: 0;
   }
@@ -288,7 +291,7 @@ div.stretchy-wrapper .stretchy-wrapper-child  {
   @media only screen and (max-width: 768px) { 
     margin-top: 16px;  
     h2{
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 }

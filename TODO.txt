@@ -34,18 +34,21 @@ Mattkrog:
 Heroku: $7
 Domain: mattkrog.me / mattkrog.com (R170 / R100)
 
--. Analytics
+√. Analytics
 -. Newsletter
+-. Email address
 -. Server puma / Procfile
 -. Caching
 -. Monitoring
 -. Register conteu.com / conteu.co.za
 -. Meta Data / SEO
   -. Site map / webmaster tools
+-. 404 page
 
-- Previous and next article
+√ Previous and next article
 - Footer
 - Sharpen logo
+- Change font
 
 - Mobile
   - Make header small-10
@@ -54,6 +57,7 @@ Domain: mattkrog.me / mattkrog.com (R170 / R100)
   - home padding
 
 - Issue index when clicking an issue it gets highlighted
+
 
 -. Templates
   - Standard header

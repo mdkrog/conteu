@@ -11,8 +11,20 @@
   p == @article.content
 
   br
-  - if signed_in? 
-    = link_to 'Edit ', edit_article_path(@article)
-    '|
-  = link_to 'Back to issue', issue_path(@article.issue)
+  .columns.small-6.full-width-columns.permanent-column
+    - if @previous_article
+      = link_to article_path(@previous_article) do
+        = fa_icon 'angle-double-left'
+        span.next-article-link = @previous_article.title
+  .columns.small-6.text-right.full-width-columns
+    - if @next_article
+      = link_to article_path(@next_article)
+        span.next-article-link = @next_article.title
+        = fa_icon 'angle-double-right'
+
+  - if signed_in?
+    .columns.small-12.full-width-columns
+      = link_to 'Edit ', edit_article_path(@article)
+      '|
+      = link_to 'Back to issue', issue_path(@article.issue)
 

@@ -1,10 +1,9 @@
 .columns.medium-12
   == render partial: 'issues/article', collection: @articles
 
-  .small-buffer
+  .x-small-buffer
     - if signed_in? 
       = link_to 'Edit ', edit_issue_path(@issue)
       '|
       = link_to 'Back to admin ', admin_path
       '|
-    = link_to 'All issues', issues_path

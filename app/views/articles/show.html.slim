@@ -1,4 +1,4 @@
-.columns.medium-12
+.columns.medium-12.article
   .text-center
     h2.article-heading = @article.title.upcase
     - if @article.author.present?
@@ -7,7 +7,7 @@
     - if @article.blurb.present?
       em &ldquo; #{@article.blurb} &rdquo;
       hr
-  p == @article.content
+  == @article.content
 
   br
   .columns.small-6.full-width-columns.permanent-column

@@ -15,7 +15,7 @@ Admin
 Mobile 
 ------
 - scrolling bug
-- footer links
+√ footer links
 - home padding
 
 Extras

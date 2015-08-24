@@ -222,6 +222,16 @@ footer{
     font-style: italic;
     padding-left: 10px;
     padding-right: 10px;
+    @media only screen and (max-width: 768px) { 
+      padding-left: 0;
+      display: block;
+    }
+  }
+  .divider{
+    display: inline;
+    @media only screen and (max-width: 768px) { 
+      display: none;
+    }
   }
   .no-left{
     padding-left: 0!important;

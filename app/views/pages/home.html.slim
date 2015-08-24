@@ -1,7 +1,8 @@
 .homepage-buffer.text-center
-    .medium-buffer
-      = image_tag("logo_#{@issue.color_scheme}.png", alt: "Conteu Logo", class: "front-page-conteu-logo")
     .small-buffer
+    = image_tag("logo_#{@issue.color_scheme}.png", alt: "Conteu Logo", class: "front-page-conteu-logo")
+    .small-buffer
+    .small-buffer.show-for-medium-up
     .featured-issue-button class="#{@issue.color_scheme}"
       .btn-coming-soon COMING SOON
 

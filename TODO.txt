@@ -20,8 +20,11 @@ Mobile
 
 Extras
 ------
-- Issue index when clicking an issue it gets highlighted
 - Sharpen logo
+- All Issues 
+  - title and 
+  - spacing at the bottom
+  - clicking an issue it gets highlighted
 
 
 

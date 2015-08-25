@@ -2,21 +2,21 @@ Features
 --------
 / Newsletter
 - Server puma / Procfile
-- Caching
+x Caching
 - Meta Data / SEO
   - Site map / webmaster tools
 - 404 page
 
 Admin
 ------
-- Register conteu.com / conteu.co.za
-- Email address
+√ Register conteu.com / conteu.co.za
+√ Email address
 
 Mobile 
 ------
 - scrolling bug
 √ footer links
-- home padding
+√ home padding
 
 Extras
 ------

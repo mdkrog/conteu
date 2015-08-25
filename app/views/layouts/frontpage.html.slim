@@ -2,9 +2,7 @@ doctype html
 html
   head
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
-    title
-      = content_for?(:title) ? yield(:title) : 'Conteu'
-    meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Conteu'}"
+    = metamagic site: "Conteu Magazine", title: [:title, :site], separator: " | "
     == stylesheet_link_tag "application", media: 'all'
     / Modernizr is required for Zurb Foundation
     == javascript_include_tag 'vendor/modernizr'

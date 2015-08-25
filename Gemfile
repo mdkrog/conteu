@@ -20,6 +20,7 @@ gem 'font-awesome-rails'
 gem 'figaro'
 gem 'fog'
 gem 'friendly_id', '~> 5.1.0'
+gem 'metamagic'
 
 group :development do
   gem 'better_errors'

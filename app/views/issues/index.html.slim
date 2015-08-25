@@ -1,3 +1,6 @@
+- meta title: "All Issues", 
+  description: "Showcasing all Conteu Magazine issues. Read current issue: #{@featured_issue.title} - Issue #{@featured_issue.issue_number}",
+  keywords: %w(Conteu Magazine Slow Living Lifestyle Issues)
 .featured-issue.row.page-gradient
   .columns.medium-12.small-12
     = image_tag(@featured_issue.cover_spread.to_s, class: "cover-spread", alt: "Featured Cover Spread")
@@ -5,7 +8,7 @@
     .text-center
       = link_to issue_path(@featured_issue), class: 'featured-issue-button-link'
         .featured-issue-button class="dark"
-          em.btn-text Read Issue
+          em.btn-text = "Read Issue #{@featured_issue.issue_number}"
     br
     hr
 .small-buffer

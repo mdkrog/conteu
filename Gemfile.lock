@@ -198,6 +198,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    metamagic (3.1.7)
+      rails (>= 3.0.0)
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_magick (4.1.0)
@@ -628,6 +630,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
+  metamagic
   mini_magick
   newrelic_rpm
   pg

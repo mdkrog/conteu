@@ -1,10 +1,10 @@
 Features
 --------
-/ Newsletter
+- Newsletter
 - Server puma / Procfile
-- New relic Monitoring
 - Caching
-- Meta Data / SEO
+√ New relic Monitoring
+√ Meta Data / SEO
   √ Site map / webmaster tools
   √ Friendly ID 
   √ meta tags
@@ -28,6 +28,7 @@ Extras
   - title and 
   - spacing at the bottom
   - clicking an issue it gets highlighted
+  and scrolls to top
 
 
 

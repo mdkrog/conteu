@@ -6,6 +6,11 @@ class ArticlesController < ApplicationController
     @issue = @article.issue
     @previous_article = Article.find_by(issue: @issue, priority_order: @article.priority_order - 1)
     @next_article = Article.find_by(issue: @issue, priority_order: @article.priority_order + 1)
+    
+    if request.path != article_path(@article)
+      redirect_to @article, status: :moved_permanently
+    end
+
     if !@article.published? && !signed_in?
       redirect_to root_path
     end
@@ -50,11 +55,11 @@ class ArticlesController < ApplicationController
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_article
-    @article = Article.includes(:issue).find(params[:id])
+    @article = Article.includes(:issue).friendly.find(params[:id])
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def article_params
-    params.require(:article).permit(:title, :content, :published, :poster_image, :author, :blurb, :category_id, :issue_id, :color_scheme, :priority_order)
+    params.require(:article).permit(:title, :content, :published, :poster_image, :author, :blurb, :category_id, :issue_id, :color_scheme, :priority_order, :slug)
   end
 end

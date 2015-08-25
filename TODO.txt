@@ -2,6 +2,7 @@ Features
 --------
 / Newsletter
 - Server puma / Procfile
+- New relic Monitoring
 x Caching
 - Meta Data / SEO
   - Site map / webmaster tools

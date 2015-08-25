@@ -1,5 +1,5 @@
-- meta title: "Issue #{@featured_issue.issue_number} - #{@featured_issue.title}", 
-  description: "Issue #{@featured_issue.issue_number} - #{@featured_issue.title}. Kindled from the French word conteur, meaning storyteller, Conteu Magazine is a collection of stories that support a more meaningful lifestyle. Released quarterly, each issue follows a different theme with stories falling into three distinct categories namely, Maker, Thinker and Adventurer.",
+- meta title: "Issue #{@issue.issue_number} - #{@issue.title}", 
+  description: "Issue #{@issue.issue_number} - #{@issue.title}. Kindled from the French word conteur, meaning storyteller, Conteu Magazine is a collection of stories that support a more meaningful lifestyle. Released quarterly, each issue follows a different theme with stories falling into three distinct categories namely, Maker, Thinker and Adventurer.",
   keywords: %w(Conteu Magazine Slow Living Lifestyle)
 .columns.medium-12
   == render partial: 'issues/article', collection: @articles

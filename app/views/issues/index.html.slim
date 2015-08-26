@@ -3,7 +3,8 @@
   keywords: %w(Conteu Magazine Slow Living Lifestyle Issues)
 .featured-issue.row.page-gradient
   .columns.medium-12.small-12
-    = image_tag(@featured_issue.cover_spread.to_s, class: "cover-spread", alt: "Featured Cover Spread")
+    = link_to issue_path(@featured_issue), class: "featured-cover-link"
+      = image_tag(@featured_issue.cover_spread.to_s, id: "cover", class: "cover-spread", alt: "Featured Cover Spread")
     .small-buffer
     .text-center
       = link_to issue_path(@featured_issue), class: 'featured-issue-button-link'

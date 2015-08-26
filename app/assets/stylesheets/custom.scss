@@ -186,6 +186,20 @@ h2.article-heading{
   }
 }
 
+.issue-title-link{
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: $body-font-family-sans; 
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #444!important;
+  &:hover{
+    color: #666!important;
+  }
+}
+
 .next-article-link{
   padding-left: 8px;
   padding-right: 8px;

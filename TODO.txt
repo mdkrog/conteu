@@ -1,8 +1,8 @@
 Features
 --------
 - Newsletter
-- Server puma / Procfile
 - Caching
+√ Server puma / Procfile
 √ New relic Monitoring
 √ Meta Data / SEO
   √ Site map / webmaster tools

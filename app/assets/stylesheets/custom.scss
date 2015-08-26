@@ -186,6 +186,23 @@ h2.article-heading{
   }
 }
 
+#mc-embedded-subscribe{
+  display: inline-block;
+  position: relative;
+  padding: 12px 30px;
+  margin-bottom: 30px;
+  border: 1px solid #333;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  font-size: 16px;
+  font-weight: 200;
+  &:hover{
+    background-color: rgb(30,30,30);    
+    background-color: rgba(30,30,30,0.1);  
+  }
+}
+
 .issue-title-link{
   display: inline-block;
   margin-top: 20px;

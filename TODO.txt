@@ -1,14 +1,14 @@
 Features
 --------
-- Newsletter
 - Caching
+√ Newsletter
 √ Server puma / Procfile
 √ New relic Monitoring
 √ Meta Data / SEO
   √ Site map / webmaster tools
   √ Friendly ID 
   √ meta tags
-- 404 page
+√ 404 page
 
 Admin
 ------

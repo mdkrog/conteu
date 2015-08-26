@@ -17,17 +17,17 @@ Admin
 
 Mobile 
 ------
-- scrolling bug
+√ scrolling bug
 √ footer links
 √ home padding
 
 Extras
 ------
 - Sharpen logo
-- All Issues 
-  - title and 
-  - spacing at the bottom
-  - clicking an issue it gets highlighted
+√ All Issues 
+  √ title and 
+  √ spacing at the bottom
+  √ clicking an issue it gets highlighted
   and scrolls to top
 
 

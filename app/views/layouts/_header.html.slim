@@ -5,7 +5,7 @@ header.full-width-row.header-bg
       = link_to root_path do
         = image_tag("logo_dark_small.png", alt: "Conteu Logo", class: "conteu-logo")
   .columns.medium-2.medium-offset-2.small-12.medium-pull-8
-    - if @issue
+    - if @issue.id
       .small-buffer.visible-for-medium-up
       = link_to issue_path(@issue)
         h1.issue-title.no-spacing ISSUE #{@issue.issue_number}: #{@issue.title.upcase}

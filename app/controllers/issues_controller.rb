@@ -4,7 +4,11 @@ class IssuesController < ApplicationController
 
   def index
     @issues = Issue.all.order(issue_number: :desc)
-    @featured_issue = @issues.first
+    if signed_in?
+      @featured_issue = @issues.first
+    else
+      @featured_issue = Issue.latest_issue
+    end
   end
 
   def show

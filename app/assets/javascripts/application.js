@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
+//= require ckeditor/init
 //= require redactor-rails
 //= require redactor-rails/plugins
 //= require redactor-rails-advanced/plugins/table

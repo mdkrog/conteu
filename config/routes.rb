@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  mount RedactorRails::Engine => '/redactor_rails'
+  mount Ckeditor::Engine => '/ckeditor'
   root 'pages#home'
 
   resources :issues do

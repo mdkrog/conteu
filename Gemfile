@@ -21,6 +21,7 @@ gem 'figaro'
 gem 'fog'
 gem 'friendly_id', '~> 5.1.0'
 gem 'metamagic'
+gem 'ckeditor'
 
 group :development do
   gem 'better_errors'

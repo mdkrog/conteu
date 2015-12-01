@@ -1,4 +1,7 @@
 class Issue < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :issue_number
+
   has_many :articles
   
   validates_presence_of :title

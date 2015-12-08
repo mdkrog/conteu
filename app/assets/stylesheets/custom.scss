@@ -137,6 +137,9 @@ main{
 }
 
 table{
+  tbody tr td{
+    border: none!important;
+  }
   table-layout: fixed;
   border: 0px;
   background: none;
@@ -146,6 +149,7 @@ table{
     // padding-right: 20px;
   }
   tr{
+    background: none!important;
     &:hover{
       background: none!important;
     }
@@ -180,6 +184,7 @@ h2.article-heading{
   border: 1px solid #333;
   color: #333;
   font-weight: 200;
+  margin: 10px; 
   &:hover{
     background-color: rgb(30,30,30);    
     background-color: rgba(30,30,30,0.1);  

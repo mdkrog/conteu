@@ -11,3 +11,6 @@
         span.btn-title = @issue.title.upcase
         em.btn-text issue 
         em.btn-number = @issue.issue_number
+    = link_to issues_path
+      .featured-issue-button class="#{@issue.color_scheme}"
+        span.btn-title = 'All Issues'

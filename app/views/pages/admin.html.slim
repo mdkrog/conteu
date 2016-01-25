@@ -52,3 +52,22 @@
     .admin-options
       = link_to 'New Category ', new_category_path
     br
+
+    table
+      tbody
+        tr
+          th colspan="4" Events
+        - @events.each do |event|
+          tr
+            td width="200" = event.name
+            td = link_to edit_event_path(event) do
+              = fa_icon "pencil-square-o"
+            td 
+              - if event.published?
+                = fa_icon "eye" 
+              - else
+                = fa_icon "eye-slash"
+            td = link_to event, data: {:confirm => 'Are you sure?'}, :method => :delete do
+              = fa_icon "trash-o"
+    .admin-options
+      = link_to 'New Event ', new_event_path

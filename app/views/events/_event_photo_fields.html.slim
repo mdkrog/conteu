@@ -1,0 +1,11 @@
+.nested-fields.event-photo-fields.x-small-buffer
+  .row
+    = f.input :order, as: :hidden
+    .columns.small-4
+      - if f.object.photo.present?
+        = image_tag f.object.photo.to_s
+      = f.input :photo, label: false
+    .columns.small-6
+      = f.input :caption, as: :text
+    .columns.small-2
+      = link_to_remove_association "remove photo", f, class: 'button tiny alert'

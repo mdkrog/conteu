@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source "http://rubygems.org"
 ruby '2.1.2'
 gem 'rails', '4.1.0'
 gem 'sass-rails', '~> 5.0.1'
@@ -22,6 +22,8 @@ gem 'fog'
 gem 'friendly_id', '~> 5.1.0'
 gem 'metamagic'
 gem 'ckeditor'
+gem 'cocoon'
+gem 'jquery-ui-rails'
 
 group :development do
   gem 'better_errors'

@@ -12,7 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require foundation
+//= require cocoon
 //= require ckeditor/init
 //= require redactor-rails
 //= require redactor-rails/plugins

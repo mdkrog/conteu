@@ -11,5 +11,6 @@ class PagesController < ApplicationController
   def admin
     @issues = Issue.all.includes(:articles).order(issue_number: :asc)
     @categories = Category.all.order(name: :asc)
+    @events = Event.all.order(date: :asc)
   end
 end

@@ -1,0 +1,22 @@
+= simple_form_for(@event, html: { multipart: true }) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :venue
+    = f.input :date
+    = f.input :description
+    = f.input :published
+    br
+
+    h4 Photos
+    #event_photos
+      = f.simple_fields_for :event_photos do |photo|
+        = render 'event_photo_fields', f: photo
+    br
+    .links
+      = link_to_add_association 'add photo', f, :event_photos, class: 'button small'
+  br
+  br
+  .form-actions
+    = f.button :submit, 'Save', class: 'success'

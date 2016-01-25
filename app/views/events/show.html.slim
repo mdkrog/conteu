@@ -1,0 +1,32 @@
+- meta title: "#{@event.name}", 
+  description: "#{@event.description}",
+  keywords: %w(Conteu Magazine Slow Living Lifestyle)
+
+.columns.medium-12.article
+  .text-center
+    h2.article-heading = @event.name.upcase
+    - if @event.venue.present?
+      .sub-heading.author = "#{@event.venue.upcase} - #{@event.date}"
+      hr
+    - if @event.description.present?
+      = @event.description
+      hr
+  - @event.event_photos.each do |event_photo|
+    = image_tag event_photo.photo.to_s
+    = event_photo.caption
+
+  / br
+  / .columns.small-6.full-width-columns.permanent-column
+  /   - if @previous_article
+  /     = link_to article_path(@previous_article) do
+  /       = fa_icon 'angle-double-left'
+  /       span.next-article-link = @previous_article.title
+  / .columns.small-6.text-right.full-width-columns
+  /   - if @next_article
+  /     = link_to article_path(@next_article)
+  /       span.next-article-link = @next_article.title
+  /       = fa_icon 'angle-double-right'
+
+  - if signed_in?
+    .columns.small-12.full-width-columns
+      = link_to 'Edit ', edit_event_path(@event)

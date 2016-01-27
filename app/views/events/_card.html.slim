@@ -1,0 +1,6 @@
+li
+  .event-card
+    = link_to event_path(event)
+      = image_tag event.poster_image.to_s
+      .text-center
+        h3 = event.name

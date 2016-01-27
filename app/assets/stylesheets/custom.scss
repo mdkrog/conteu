@@ -356,26 +356,19 @@ div.stretchy-wrapper .stretchy-wrapper-child  {
 }
 
 .radio input, .checkbox input{
-  margin-right: 8px;
-}
+  margin-right: 8px; } .admin-options{ font-size: 14px; a{ color: #000; &:hover{ color: #888; } } } #mc_embed_signup{ h6{ color: #666; } } .event-photo-fields{ background: #e1e1e1; margin-bottom: 5px; } 
 
-.admin-options{
-  font-size: 14px;
-  a{
-    color: #000;
-    &:hover{
-      color: #888;
-    }
+.event-card{
+  background: #fff;
+  border: 1px solid #999;
+  padding: 0;
+  img { 
+    width: 100%; 
+  } 
+  h3{
+    padding-top: 20px;
   }
-}
-
-#mc_embed_signup{
-  h6{
-    color: #666;
+  &:hover{
+    opacity: 0.9;
   }
-}
-
-.event-photo-fields{
-  background: #e1e1e1;
-  margin-bottom: 5px;
 }

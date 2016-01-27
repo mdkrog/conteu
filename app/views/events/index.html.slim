@@ -1,0 +1,10 @@
+- meta title: "Events",
+  description: "Kindled from the French word conteur, meaning storyteller, Conteu Magazine is a collection of stories that support a more meaningful lifestyle. Released quarterly, each event follows a different theme with stories falling into three distinct categories namely, Maker, Thinker and Adventurer.",
+  keywords: %w(Conteu Magazine Slow Living Lifestyle)
+.columns.medium-12
+  - if @events.present?
+    ul.small-block-grid-2
+      - @events.each do |event|
+        == render partial: "events/card", locals: {event: event}
+  - else
+    h1 Events coming soon

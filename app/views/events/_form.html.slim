@@ -8,7 +8,10 @@
     = f.input :description
     = f.input :published
     br
-
+    - if @event.poster_image.present?
+      = image_tag @event.poster_image.to_s
+    = f.input :poster_image, label: 'Poster image (400x100px)'
+    br
     h4 Photos
     #event_photos
       = f.simple_fields_for :event_photos do |photo|

@@ -2,6 +2,10 @@ class EventsController < ApplicationController
   before_action :require_login, except: [:show]
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
+  def index
+    @events = Event.where(published: true).order(date: :desc)
+  end
+
   def new
     @event = Event.new
   end
@@ -42,6 +46,6 @@ class EventsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def event_params
-    params.require(:event).permit(:name, :venue, :date, :description, :published, event_photos_attributes: [:id, :order, :photo, :caption, :_destroy])
+    params.require(:event).permit(:name, :venue, :date, :description, :published, :poster_image, event_photos_attributes: [:id, :order, :photo, :caption, :_destroy])
   end
 end
